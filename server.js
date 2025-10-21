@@ -13,10 +13,10 @@ const PORT = process.env.PORT || 4000;
 
 // FRONTEND URL: Cloud ortamında frontend URL’nizi buraya yazabilirsiniz
 // Local test için localhost:3000
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+const FRONTEND_URL = process.env.FRONTEND_URL ;
 
 // Middleware
-app.use(cors({ origin: FRONTEND_URL }));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
